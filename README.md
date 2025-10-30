@@ -11,27 +11,45 @@ A CLI tool to quickly spin up Miden projects with Next.js, Miden WebClient and M
 
 Before using `create-miden`, make sure you have the following installed:
 
-- **Node.js** (version 16.0.0 or higher)
-- **pnpm** (recommended package manager)
+- Node.js ≥ 16.0.0
+- pnpm (recommended package manager)
 
-### Installing Prerequisites
+Install pnpm globally if you don’t have it:
 
 ```bash
-# Install Node.js (if not already installed)
-# Visit https://nodejs.org/ and download the LTS version
-
-# Install pnpm globally
 npm install -g pnpm
+```
 
-# Verify installations
-node --version  # Should be 16.0.0 or higher
-pnpm --version  # Should show pnpm version
+Verify your setup:
+
+```bash
+node --version   # should be 16.x or newer
+pnpm --version
 ```
 
 ## 🚀 Quick Start
 
 ```bash
 npx create-miden
+```
+
+You’ll be prompted to:
+
+- Enter a project name
+- Choose template version (Stable by default)
+
+## Next Steps
+
+After the project is created:
+
+```bash
+cd <your-project-name>
+
+# install deps (recommended)
+pnpm install
+
+# start dev server
+pnpm run dev
 ```
 
 ## Project Structure
@@ -41,31 +59,23 @@ After creating a project, you'll get:
 ```
 my-app/
 ├── src/
-│   ├── app/                 # Next.js app directory (if using Next.js)
+│   ├── app/                 # Next.js app directory
 │   ├── components/          # React components
 │   └── ...
 ├── public/                  # Static assets
-├── package.json            # Dependencies and scripts
-├── tailwind.config.js      # Tailwind configuration
-├── tsconfig.json          # TypeScript configuration
-└── README.md              # Project documentation
+├── package.json             # Dependencies and scripts
+├── tailwind.config.js       # Tailwind configuration
+├── tsconfig.json            # TypeScript configuration
+└── README.md                # Project documentation
 ```
 
 ## Publishing
 
 ```bash
-npm run build
+pnpm run build
 
-npm publish
+pnpm publish
 ```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
 
 ## License
 
