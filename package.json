@@ -1,6 +1,6 @@
 {
   "name": "create-miden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool to quickly spin up Miden projects with Next.js",
   "main": "dist/index.js",
   "bin": {
@@ -64,10 +64,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/qash-finance/create-miden.git"
+    "url": "https://github.com/ngjupeng/create-miden.git"
   },
   "bugs": {
-    "url": "https://github.com/qash-finance/create-miden/issues"
+    "url": "https://github.com/ngjupeng/create-miden/issues"
   },
-  "homepage": "https://github.com/qash-finance/create-miden#readme"
+  "homepage": "https://github.com/ngjupeng/create-miden#readme"
 }
