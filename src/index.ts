@@ -12,21 +12,21 @@ import { HelpCommand } from './commands/help';
 const program = new Command();
 
 const banner = figlet.textSync('create-miden', {
-  font: 'ANSI Shadow',
-  horizontalLayout: 'default',
+  font: 'Small',
+  horizontalLayout: 'fitted',
   verticalLayout: 'default',
 });
 
 console.log(
   boxen(
     gradient.rainbow.multiline(banner) +
-      '\n\n' +
+      '\n' +
       chalk.white.bold('Create Miden projects with ease!') +
       '\n' +
       chalk.gray('A CLI tool for spinning up Miden + Next.js projects'),
     {
       padding: 1,
-      margin: 1,
+      margin: { top: 0, bottom: 0, left: 1, right: 1 },
       borderStyle: 'round',
       borderColor: 'cyan',
       backgroundColor: '#1a1a1a',

@@ -15,6 +15,7 @@ ${chalk.green.bold('Project created successfully!')}
 
 ${chalk.cyan('Next steps:')}
   ${chalk.gray('1.')} ${chalk.yellow('cd')} ${chalk.yellow(projectName)}
+  ${chalk.gray('2.')} ${chalk.yellow('pnpm install')}
   ${chalk.gray('3.')} ${chalk.yellow('pnpm run dev')}
 
 ${'Happy coding!'}

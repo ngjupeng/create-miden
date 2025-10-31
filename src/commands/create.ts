@@ -106,14 +106,4 @@ export class CreateCommand extends Command {
 
     return version;
   }
-
-  private async getProjectOptions(skipPrompts = false): Promise<any> {
-    return {
-      typescript: true,
-      tailwind: true,
-      eslint: true,
-      prettier: true,
-      git: true,
-    };
-  }
 }
